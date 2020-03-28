@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tour de France</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rock+Salt" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Tour de France 1903 - 2016</h1>
+    <h4>A look at the iconic event through the years</h4>
+    <h5>Hover over the years for more information</h5>
+    <svg width="850" height="1000">
+      <g class="chart" transform="translate(50, 0)">
+        <g class="entrants" />
+        <g class="finishers" />
+        <g class="winners" />
+        <g class="year-labels" />
+      </g>
+    </svg>
+    <div class="legend"></div>
+    <div class="description">
+      <div>Outer circle = number of entrants | Grey circle = number of finishers | Coloured circle = winner's nationality</div>
+      <div>Data from <a href="https://public.tableau.com/en-us/s/resources">public.tableau.com</a></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.flourish.rocks/popup-v1.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.2/d3.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
